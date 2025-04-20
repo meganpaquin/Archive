@@ -1,0 +1,116 @@
+.admin{
+    background-image: url('../../public/images/background.jpg');
+    background-repeat: none;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: scroll;
+}
+
+.admin .parent {
+    display: flex;
+}
+
+.admin .parent .product{
+    flex: 1;
+    margin: 0px 20px 20px 10px;
+    padding: 10px;
+}
+
+.admin .parent .list{
+    flex: 1;
+}
+
+.admin button{
+    width: auto;
+    height: auto;
+    margin-left: 180px;
+}
+
+.admin h1{
+    margin: 80px auto 10px auto;
+    background-color: #febeaabd;
+    width: 100%;
+    padding: 20px;
+    color: #a78338;
+    font-size: 20px;
+    text-align: center;
+}
+
+.admin #file{
+    width: 300px;
+    margin: auto auto auto 10px;
+}
+
+.admin input{
+    width: 300px;
+}
+
+.admin .list{
+    background-color: #febeaabd;
+    border-radius: 2%;
+    border: 2px solid black;
+    
+}
+
+.admin .product{
+    background-color: #d9eec5c1;
+}
+
+.admin h4{
+    margin: 0 auto 10px auto;
+    background-color: #febeaabd;
+    width: 100%;
+    padding: 20px;
+    color: #a78338;
+    font-size: 20px;
+    text-align: center
+}
+
+.admin .coupon-map{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #d9eec5c1;
+    padding: 20px;
+    margin: 10px auto;
+    font-size: 20px;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.admin .coupon-map span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.admin .coupon-map li{
+    margin: 0 20px;
+}
+
+.admin .btn-danger{
+    margin: 0 auto;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.admin .discounts-section{
+    margin-bottom: 50px;
+}
+
+.admin .data-coupon{
+    width: 500px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.admin .code{
+    width: 250px;
+}

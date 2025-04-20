@@ -1,0 +1,13 @@
+Bugs:
+    None
+
+Functionality Additions:
+    None
+
+Security Issues:
+    None
+
+CSS Issues:
+    Password Reset CSS
+    Password Change CSS
+    Edit Teams Alignment CSS

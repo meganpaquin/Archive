@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{% endblock title %}
+
+{% block contents %}
+
+    <div class="details">
+
+        <h4>{{ post.title }}</h4>
+        <strong>Created on: {{ post.created_on }}</strong>
+        <p>{{ post.body }}</p>
+        <a href="{% url 'home' %}" class="card-btns">Home</a>
+
+    </div>
+{% endblock contents %}

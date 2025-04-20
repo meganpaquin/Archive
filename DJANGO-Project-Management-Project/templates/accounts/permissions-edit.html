@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+User Settings
+{% endblock title %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'css/change-user.css' %}">
+{% endblock links %}
+
+{% block contents %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="user-info">
+        <div class="profile-pic">
+            <img src="{{ selected.image.url }}" alt="the user profile picture" class="change-user-profile-pic">
+
+            <div class="input-group">
+                <span>{{ form.image }}</span>
+            </div>
+        </div>
+
+        <div class="fields">
+            <h3>User Details</h3>
+            <div class="input-group">
+                <label> Email Address:</label>
+                <span>{{ form.email }}</span>
+            </div>
+            <div class="input-group">
+                <label> First Name:</label>
+                <span>{{ form.first_name }}</span>
+            </div>
+            <div class="input-group">
+                <label> Last Name:</label>
+                <span>{{ form.last_name }}</span>
+            </div>
+            <div class="input-group">
+                <label> Phone Number:</label>
+                <span>{{ form.phone }}</span>
+            </div>
+            <div class="input-group">
+                <label> Color:</label>
+                <span>{{ form.color }}</span>
+            </div>
+            
+
+            <div class="permission">
+                <h3>Select User Permissions Level</h3>
+                <label>Base User</label><span>{{ form.is_active }}</span>
+                <label>Manager</label><span>{{ form.is_staff }}</span>
+                <label>Permissions Manager</label><span>{{ form.is_superuser }}</span>
+            </div>
+            <input type="submit" value="Save" class="btn-form">
+        </div>
+        
+    </div>
+
+    
+    
+
+    
+</form>
+
+{% endblock contents %}

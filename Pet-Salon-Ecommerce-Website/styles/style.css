@@ -1,0 +1,271 @@
+/*global */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form-control{
+    font-family: 'open-sans';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.btn-outline-secondary:hover{
+    background-color: green;
+    font-weight: bold;
+    color: black;
+}
+
+.form-select option, .form-select[selected]{
+    font-family: 'open-sans'!important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+}
+
+.btn-primary{
+    background: green;
+    text-align: center;
+    margin: auto auto auto 60px;
+}
+
+#the-last-card{
+    -webkit-box-shadow: none;
+        box-shadow: none;
+    border: none;
+}
+
+.list-group-item{
+    width: 9rem;
+}
+
+.bold-name{
+    font-weight: bold;
+}
+
+.card-text{
+    text-align: left;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.card{
+    -webkit-box-shadow: 0 0 10px darkgrey;
+        box-shadow: 0 0 10px darkgrey;
+    margin: 20px 0 0 0;
+    height: 670px;
+}
+
+.invisible-card{
+    display: none;
+}
+
+.smaller-card{
+    -webkit-box-shadow: 0 0 10px darkgrey;
+        box-shadow: 0 0 10px darkgrey;
+    margin: 60px 0 0 0;
+    height: 370px;
+}
+
+.invisible-btn{
+    border: none;
+}
+
+
+@media screen and (min-width:850px){
+    header{
+        height: 450px;
+        background-image: url('../pictures/header_image.jpg');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: none;
+        margin-top: 50px;
+    }
+
+    h1{
+        font-family: 'open-sans';
+        font-weight: 700;
+        font-size: 75px;
+        margin: 50px 0 0 30px;
+        padding: 100px 0 0 30px;
+    }
+
+    #index-header h2{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px auto auto 80px;
+    }
+
+    .input-group-text{
+        width: 200px;
+        font-family: 'open-sans';
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .input-group{
+        margin-bottom: 20px;
+        width: 600px;
+    }
+
+    #register-main{
+        width: 100%;
+        margin: 80px 0 50px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #register-heading h1, p{
+        padding: 0 0 10px 0;
+        text-align: center;
+    }
+
+    #register-heading p{
+        margin: 10px 0 20px 0;
+        font-size: 18px;
+        font-family: 'open-sans',Arial, Helvetica, sans-serif;
+        
+    }
+
+    .container{
+        justify-content: center;
+        width: 620px;
+    }
+
+    .row{
+        margin: 30px auto 10px 40px;
+    }
+
+    .table{
+        width: 100%;
+        margin: 20px auto auto auto;
+    }
+
+    footer p i, footer p{
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media screen and (max-width:850px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar-brand, .d-flex input, .d-flex button{
+        font-size: 12px;
+    }
+
+    .d-flex{
+        width: 150px;
+    }
+
+    #admin {
+        display: none;
+    }
+
+    header{
+        height: 300px;
+        width: 100%;
+        background-image: url('../pictures/header_image.jpg');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: none;
+    }
+
+    header h2{
+        font-size: 14px;
+        width: 140px;
+        margin: 5px auto auto 25px;
+    }
+    
+    h1{
+        font-family: 'open-sans';
+        font-weight: 700;
+        font-size: 30px;
+        margin: 50px 0 0 10px;
+        padding: 120px 0 0 5px;
+    }
+
+    .input-group-text{
+        width: 150px;
+        font-family: 'open-sans';
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #h1-about{
+        margin: 60px 0 0 10px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .input-group{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    #register-main{
+        width: 100%;
+        margin: 0 0 50px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .time-table, .owner-table{
+        display: none;
+    }
+
+    #pet-list-table{
+        margin: 20px auto auto auto;
+    }
+
+    #register-heading h1, p{
+        margin: 0 auto 10px auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    #register-heading{
+        margin: 60px auto auto auto;
+        padding: 0;
+    }
+    
+    .container{
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .row{
+        width: 80%;
+        margin: auto auto auto 35px;
+    }  
+    
+    footer p i, footer p{
+        margin: 10px 0 0 0;
+        font-size: 12px;
+        color: white;
+    }
+
+    .table{
+        width: 100%;
+    }
+}

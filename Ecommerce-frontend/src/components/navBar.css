@@ -1,0 +1,30 @@
+
+.nav .navbar{
+    position: fixed;
+    z-index: 1 !important;
+    top: 20px;
+    width: 100%;
+    background-color: #f3e5d0 !important;
+    opacity: .90;
+}
+
+.nav .navbar .navbar-collapse{
+    width: 100%;    
+}
+
+.nav a{
+    text-decoration: none;
+    color: #a78338;
+}
+
+.nav a:hover{
+    color: black;
+}
+
+.nav .btn{
+    width: 80px;
+}
+
+.nav .login{
+    margin-right: 10px;
+}
